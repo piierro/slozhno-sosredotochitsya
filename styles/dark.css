@@ -4,9 +4,85 @@
   переключая тему
 */
 
-.page.theme_dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+:root.theme-dark {
+  --accent-color: #FF0070;
+  --bg-color: #000028;
+  --text-color: #F1B2CE;
+}
+
+.page .theme_dark {
+  max-width: 1024px;
+  margin: 0 auto;
+  background-color: var(--bg-color, #000028);
+  font-size: 18px;
+  font-family: 'IBM Plex Mono', sans-serif;
+  color: var(--text-color, #F1B2CE);
+}
+
+.decorated-zone {
+  background-image: url(../images/cover-image-dark.png);
+}
+
+.border__decor::before {
+  content: '';
+  position: absolute;
+  border-top: 1px solid #FF0070;
+  border-right: 1px solid #FF0070;
+  top: 19px;
+  right: 20px;
+  width: 23px;
+  height: 23px;
+}
+
+.border__decor-second::before {
+  content: '';
+  position: absolute;
+  border-left: 1px solid #FF0070;
+  border-bottom: 1px solid #FF0070;
+  bottom: 20px;
+  left: 20px;
+  width: 23px;
+  height: 23px;
+}
+
+.decor__point::before {
+  content: '';
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  background: #FF0070;
+  box-shadow: 0px 0px 4px 2px rgba(255, 0, 112, 1);
+  border-radius: 50%;
+  top: 28px;
+  right: 29px;
+}
+
+.decor__text::before {
+  content: 'REC';
+  position: absolute;
+  color: var(--accent-color, #FF0070);
+  top: 23px;
+  right: 46px;
+}
+
+.border__dec::before {
+  content: '';
+  position: absolute;
+  border-top: 1px solid #FF0070;
+  border-right: 1px solid #FF0070;
+  top: 19px;
+  right: 20px;
+  width: 23px;
+  height: 23px;
+}
+
+.border__dec-second::before {
+  content: '';
+  position: absolute;
+  border-left: 1px solid #FF0070;
+  border-bottom: 1px solid #FF0070;
+  bottom: 20px;
+  left: 20px;
+  width: 23px;
+  height: 23px;
 }

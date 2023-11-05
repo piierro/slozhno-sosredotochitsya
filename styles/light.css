@@ -4,9 +4,45 @@
   переключая тему
 */
 
+:root.theme-light {
+  --accent-color: #FF0070;
+  --bg-color-light: #FFF1F7;
+  --text-color-light: #353430;
+}
+
 .page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  max-width: 1024px;
+  margin: 0 auto;
+  background-color: var(--bg-color-light, #FFF1F7);
+  color: var(--text-color-light, #353430);
+  font-size: 18px;
+  font-family: 'IBM Plex Mono', sans-serif;
+}
+
+.decorated-zone {
+  background-image: url(../images/cover-image-light.png);
+}
+
+.theme_light .border__decor::before {
+  border: none;
+}
+
+.theme_light .border__decor-second::before {
+  border: none;
+}
+
+.theme_light .decor__point::before {
+  display: none;
+}
+
+.theme_light .decor__text::before {
+  display: none;
+}
+
+.theme_light .border__dec::before {
+  display: none;
+}
+
+.theme_light .border__dec-second::before {
+  display: none;
 }
