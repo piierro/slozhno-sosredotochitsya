@@ -1,11 +1,11 @@
 .page {
   min-inline-size: 375px;
   max-inline-size: 1440px;
-  background-color: var(--bg-color__light, #FFF1F7);
+  background-color: var(--bg-color-dark, #000028);
   font-size: 18px;
   font-family: var(--main-font-family, 'IBM Plex mono', sans-serif);
-  color: var(--text-color__light, #353430);
-  background-image: url(../images/cover-image-light.png);
+  color: var(--text-color__dark, #F1B2CE);
+  background-image: url(../images/cover-image-dark.png);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -19,7 +19,7 @@
   justify-items: end;
   align-items: center;
   height: 100vh;
-  margin-bottom: 46px;
+  margin-bottom: 52px;
   padding-right: 20px;
 }
 
@@ -43,7 +43,7 @@
 }
 
 .header__theme-menu-button {
-  color: var(--accent-color__light, #FF8DCB);
+  color: var(--accent-color, #FF0070);
   font-size: 18px;
   line-height: 18px;
   border: none;
@@ -55,7 +55,7 @@
 
 .header__theme-menu-button_active {
   pointer-events: none;
-  outline: 1px solid #353430;
+  outline: 1px solid #FF0070;
 }
 
 .header__theme-menu-button:hover {
@@ -71,7 +71,7 @@
 }
 
 .header__title {
-  color: var(--color-light, #FFC2E6);
+  color: var(--color-dark, #DB00FF);
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   text-shadow: 4px 4px 0 var(--accent-color, #FF0070);
   line-height: 82.5%;
@@ -83,7 +83,7 @@
   line-height: 23.4px;
   justify-self: end;
   inline-size: clamp(364px, calc(100%/2), 491px);
-  margin-bottom: 39px;
+  margin-bottom: 28px;
 }
 
 .title-decor {
@@ -280,7 +280,7 @@
 .footer__title {
   color: var(--color-dark, #DB00FF);
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  text-shadow: 4px 4px 0 var(--accent-color, #FF0070);
+  text-shadow: 3px 3px 0 var(--accent-color, #FF0070);
   font-weight: 700;
 }
 
