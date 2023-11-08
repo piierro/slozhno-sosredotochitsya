@@ -5,22 +5,41 @@
 */
 
 :root.theme-light {
-  --accent-color: #FF0070;
-  --bg-color-light: #FFF1F7;
+  --accent-color__light: #FF8DCB;
+  --bg-color__light: #FFF1F7;
   --text-color-light: #353430;
+  --color-light: #FFC2E6;
+  --text-color__light: #353430;
 }
 
 .page.theme_light {
-  max-width: 1024px;
-  margin: 0 auto;
-  background-color: var(--bg-color-light, #FFF1F7);
-  color: var(--text-color-light, #353430);
-  font-size: 18px;
-  font-family: 'IBM Plex Mono', sans-serif;
+  background-color: var(--bg-color__light, #FFF1F7);
+  color: var(--text-color__light, #353430);
+  background-image: url(../images/cover-image-light.png);
 }
 
-.decorated-zone {
-  background-image: url(../images/cover-image-light.png);
+.theme_light .header__theme-menu-button {
+  color: var(--text-color__light, #353430);
+}
+
+.theme_light .header__theme-menu-button_active {
+  outline: 1px solid #353430;
+}
+
+.theme_light .header__title {
+    color: var(--color-light, #FFC2E6);
+}
+
+.theme_light .title-decor {
+  background-color: var(--accent-color__light, #FF8DCB);
+}
+
+.theme_light .content__title {
+  color: var(--text-color__light, #353430);
+}
+
+.theme_light .footer__title {
+  color: var(--color-light, #FFC2E6);
 }
 
 .theme_light .border__decor::before {
@@ -45,4 +64,14 @@
 
 .theme_light .border__dec-second::before {
   display: none;
+}
+
+@media (color-scheme: light) {
+  :root {
+    --accent-color__light: #FF8DCB;
+    --bg-color__light: #FFF1F7;
+    --text-color-light: #353430;
+    --color-light: #FFC2E6;
+    --text-color__light: #353430;
+  }
 }

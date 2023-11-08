@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="color-scheme" content="dark light" />
     <title>Сложно сосредоточиться</title>
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/dark.css" />
     <link rel="stylesheet" href="./styles/light.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
     <link rel="icon" href="./images/favicon.ico" sizes="any" />
     <link rel="icon" href="./images/favicon.svg" type="image/svg+html" />
+    <link rel="apple-touch-icon" href="./images/mobile-icon.png" />
   </head>
   <body class="page">
     <header class="header decorated-zone">
@@ -43,20 +46,21 @@
       </nav>
       <h1 class="header__title">no focus</h1>
       <p class="header__text title-decor">
-        Что делать, когда не можешь делать ничего<br />
+        Что делать, когда не можешь делать ничего<br>
         Или почему нам так сложно сконцентрироваться, особенно когда очень надо
       </p>
-      <div class="border__decor"></div>
-      <div class="border__decor-second"></div>
-      <div class="decor__point"></div>
-      <div class="decor__text"></div>
+      <div class="border__decor" aria-hidden="true"></div>
+      <div class="border__decor-second" aria-hidden="true"></div>
+      <div class="decor__point" aria-hidden="true"></div>
+      <div class="decor__text" aria-hidden="true"></div>
     </header>
+    <main>
     <section class="concentrate">
       <div class="content">
         <div class="content__concentrate">
           <h2 class="content__title">Почему сосредоточиться так сложно</h2>
           <div class="content__column">
-            <h3 class="title-decor card__title">Многозадачность</h3>
+            <h3 class="title title-decor">Многозадачность</h3>
             <p class="content__text">
               Особенно сложно сосредоточиться, когда задач много и все они —
               важные. Где же легендарная многозадачность, когда она так нужна
@@ -70,7 +74,7 @@
             </p>
           </div>
           <div class="content__column">
-            <h3 class="title-decor card__title">Дофамин</h3>
+            <h3 class="title title-decor">Дофамин</h3>
             <p class="content__text">
               С гормонами стресса всё понятно, но дальше — ещё интереснее. В
               нашей невозможности сосредоточиться замешана и полная
@@ -93,7 +97,7 @@
         </h2>
         <div class="content__attention">
           <div class="content__attention-column">
-            <h3 class="title-decor  card__title">Многозадачность</h3>
+            <h3 class="title__attention title-decor">Многозадачность</h3>
             <p class="content__text">
               Как концентрация может снижаться из-за… концентрации? Любая
               стрессовая ситуация (и резко меняющийся мир в целом) заставляет
@@ -104,7 +108,7 @@
             </p>
           </div>
           <div class="content__attention-column">
-            <h3 class="title-decor  card__title">Еда</h3>
+            <h3 class="title__attention title-decor">Еда</h3>
             <p class="content__text">
               «Быстрые углеводы» — сахар, белый хлеб, сладости — молниеносно
               доставляют в мозг энергию и помогают ему лучше работать. Но уходит
@@ -115,7 +119,7 @@
             </p>
           </div>
           <div class="content__attention-column">
-            <h3 class="title-decor  card__title">Гаджеты</h3>
+            <h3 class="title__attention title-decor">Гаджеты</h3>
             <p class="content__text">
               Да-да, это та самая ситуация, когда на экране ноутбука — код, в
               наушниках — подкаст, а на компьютере фоном — ещё и видео с
@@ -133,17 +137,17 @@
       <div class="content">
         <div class="content__concentration">
           <h2 class="content__title">
-            Как концентрироваться лучше,<br> чем золотая рыбка (то есть дольше трёх
+            Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх
             секунд)
           </h2>
           <div class="content__column">
-            <h3 class="title-decor card__title">
+            <h3 class="title title-decor">
               5 простых (на самом деле не очень) советов
             </h3>
             <h4 class="content__subtitle title-decor">
               Представьте небо и облака
             </h4>
-            <p class="content__text">
+            <p class="concentration__text">
               Или листья в ручье. Тут дело в лёгкой медитации, которая помогает
               успокоиться. Ведь часто именно тревожные мысли о сложных задачах
               как раз и мешают эти сложные задачи делать. В такие моменты можно
@@ -156,7 +160,7 @@
           </div>
           <div class="content__column">
             <h4 class="content__subtitle title-decor">Включите музыку</h4>
-            <p class="content__text">
+            <p class="concentration__text">
               Но не любую, и не любимую. Любимая может быть связана с сильными
               положительными эмоциями, которые тоже очень сильно отвлекают.
               Подойдёт тихая, спокойная, умеренно-ритмичная. Можно вообще
@@ -165,7 +169,7 @@
           </div>
           <div class="content__column">
             <h4 class="content__subtitle title-decor">Прогуляйтесь</h4>
-            <p class="content__text">
+            <p class="concentration__text">
               Или даже пробегитесь. Лучше найти парк или лес: один эксперимент
               <a href="#" class="title-dec">показал</a>, что созерцание природы повышает концентрацию, в то время
               как после просмотра городских пейзажей она наоборот понижается.
@@ -177,7 +181,7 @@
           </div>
           <div class="content__column">
             <h4 class="content__subtitle title-decor">Хорошо ешьте</h4>
-            <p class="content__text">
+            <p class="concentration__text">
               Мы — не ваша бабушка, но это правда важно. Выбирайте продукты,
               которые препятствуют резким скачкам сахара в крови. Например, с
               высоким содержанием клетчатки: овощи, ягоды, бобовые (нут,
@@ -186,7 +190,7 @@
           </div>
           <div class="content__column">
             <h4 class="content__subtitle title-decor">Читайте</h4>
-            <p class="content__text">
+            <p class="concentration__text">
               Настоящие бумажные книги. Это правда помогает с концентрацией:
               чтобы прочитать пост в соцсети, достаточно нескольких минут или
               даже секунд. А вот интересная книга способна затянуть и на
@@ -233,12 +237,13 @@
         </div>
       </div>
     </section>
+  </main>
     <footer class="footer">
       <div class="content">
         <h2 class="footer__title">focus</h2>
       </div>
-      <div class="border__dec"></div>
-      <div class="border__dec-second"></div>
+      <div class="border__dec" aria-hidden="true"></div>
+      <div class="border__dec-second" aria-hidden="true"></div>
     </footer>
     <script src="./scripts/script.js"></script>
   </body>

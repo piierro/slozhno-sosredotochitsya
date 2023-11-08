@@ -4,7 +4,14 @@
 */
 
 :root {
+  --main-font-family: 'IBM Plex mono', sans-serif;
+  --color-title: #000028;
+  --color-dark: #DB00FF;
+  --color-light: #FFC2E6;
   --accent-color: #FF0070;
-  --bg-color: #000028;
-  --text-color: #F1B2CE;
+  --accent-color__light: #FF8DCB;
+  --bg-color__dark: #000028;
+  --bg-color__light: #FFF1F7;
+  --text-color__dark: #F1B2CE;
+  --text-color__light: #353430;
 }
