@@ -349,10 +349,6 @@
   .concentration {
     margin-bottom: 76px;
   }
-
-  .footer {
-    height: 132vh;
-  }
 }
 
 @media screen and (max-width: 460px) {
