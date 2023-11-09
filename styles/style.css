@@ -1,9 +1,9 @@
 .page {
-  background-color: var(--bg-color__light, #FFF1F7);
+  background-color: var(--bg-color, #000028);
   font-size: 18px;
   font-family: var(--main-font-family, 'IBM Plex mono', sans-serif);
   color: var(--text-color__dark, #F1B2CE);
-  background-image: url(../images/cover-image-light.png);
+  background-image: url(../images/cover-image-dark.png);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -362,7 +362,7 @@
   }
 
   .concentration {
-    margin-bottom: 80px;
+    margin-bottom: 103px;
   }
 
   .gallery {
