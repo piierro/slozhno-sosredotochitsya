@@ -1,12 +1,13 @@
 .page {
-  background-color: var(--bg-color-dark, #000028);
+  background-color: var(--bg-color__light, #FFF1F7);
   font-size: 18px;
   font-family: var(--main-font-family, 'IBM Plex mono', sans-serif);
   color: var(--text-color__dark, #F1B2CE);
-  background-image: url(../images/cover-image-dark.png);
+  background-image: url(../images/cover-image-light.png);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  z-index: 1;
 }
 
 .header {
@@ -211,7 +212,7 @@
 }
 
 .concentration__text {
-  margin-top: 5px;
+  margin-top: 0;
 }
 
 .subtitle {
