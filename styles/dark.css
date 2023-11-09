@@ -132,3 +132,31 @@
     --color-dark: #DB00FF;
   }
 }
+
+@media screen and (max-width: 375px) {
+  .border__decor::before {
+    top: 11px;
+  }
+
+  .border__decor-second::before {
+    bottom: 10px;
+  }
+
+  .decor__point::before {
+    top: 19px;
+  }
+
+  .decor__text::before {
+    top: 11px;
+  }
+
+  .border__dec::before {
+    top: 11px;
+    right: 10px;
+  }
+
+  .border__dec-second::before {
+    bottom: 10px;
+    left: 10px;
+  }
+}
