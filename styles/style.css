@@ -186,7 +186,7 @@
 }
 
 .attention {
-  margin-bottom: 103px;
+  margin-bottom: 80px;
 }
 
 .content__attention {
@@ -200,22 +200,26 @@
 }
 
 .concentration {
-  margin-bottom: 103px;
+  margin-bottom: 80px;
 }
 
 .content__concentration {
   display: grid;
   grid-template-columns: 1fr 2fr;
   column-gap: 11px;
+  row-gap: 31px;
 }
 
 .concentration__text {
   margin: 0;
 }
 
+.subtitle {
+  margin-bottom: 20px;
+}
+
 .content__subtitle {
   font-weight: 400;
-  margin: 18px 0 11px;
 }  
 
 .title-gallery {
