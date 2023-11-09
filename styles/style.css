@@ -19,7 +19,7 @@
   justify-items: end;
   align-items: center;
   height: 100vh;
-  margin-bottom: 52px;
+  margin-bottom: 50px;
   padding-right: 20px;
 }
 
@@ -331,6 +331,11 @@
 
   .content__title {
     max-width: 230px;
+    margin-top: 3px;
+  }
+
+  .title {
+    margin-top: 2px;
   }
 
   .content__attention {
@@ -339,7 +344,7 @@
   }
 
   .attention {
-    margin-bottom: 77px;
+    margin-bottom: 74px;
   }
 
   .content__concentration {
