@@ -38,6 +38,22 @@
   color: var(--text-color__light, #353430);
 }
 
+.theme_light .title-dec {
+  text-shadow: 1px 2px 0 var(--accent-color__light, #FF8DCB)
+}
+
+.theme_light .title-dec:hover {
+  border-bottom: 1px solid #353430;
+}
+
+.theme_light .title-dec:focus-visible {
+    outline: 1px solid #353430;
+}
+
+.theme_light .header__theme-menu-button:hover {
+  border: 1px solid rgba(50, 49, 45, 0.40);
+}
+
 .theme_light .footer__title {
   color: var(--color-light, #FFC2E6);
 }
