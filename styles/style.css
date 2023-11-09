@@ -7,7 +7,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  z-index: 1;
+  line-height: 23.4px;
 }
 
 .header {
@@ -393,6 +393,7 @@
 
   .concentration__text {
     margin-top: 8px;
+    line-height: 24.4px;
   }
 
   .gallery {
