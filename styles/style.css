@@ -159,14 +159,14 @@
 }
 
 .concentration {
-  margin-bottom: 103px;
+  margin-bottom: 76px;
 }
 
 .content__concentration {
   display: grid;
   grid-template-columns: 1fr 2fr;
   column-gap: 11px;
-  row-gap: 31px;
+  row-gap: 20px;
 }
 
 .concentration__text {
@@ -179,6 +179,7 @@
 
 .content__subtitle {
   font-weight: 400;
+  margin-bottom: 11px;
 }  
 
 .title-gallery {
