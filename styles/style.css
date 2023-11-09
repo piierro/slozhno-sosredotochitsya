@@ -352,6 +352,11 @@
 }
 
 @media screen and (max-width: 460px) {
+   .header {
+     padding-right: 0;
+     margin-bottom: 40px;
+   }
+
    .content {
     padding: 0 10px;
    }
@@ -360,6 +365,10 @@
     font-size: clamp(7.25rem, 6.9465rem + 1.2951vw, 8.125rem);
   }
   
+  .concentrate {
+    margin-bottom: 50px;
+  }
+
   .content__concentrate {
     row-gap: 20px;
     grid-template-columns: none;
@@ -372,6 +381,18 @@
   .content__concentration {
     row-gap: 20px;
     grid-template-columns: none;
+  }
+
+  .attention {
+    margin-bottom: 50px;
+  }
+
+  .concentration {
+    margin-bottom: 50px;
+  }
+
+  .gallery {
+    margin-bottom: 40px;
   }
 
   .content__gallery {
