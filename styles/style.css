@@ -207,16 +207,20 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   column-gap: 11px;
+  row-gap: 20px;
+}
+
+.subtitle {
+  margin-bottom: 19px;
 }
 
 .concentration__text {
-  margin: 0;
+  margin-top: 10px;
 }
 
 .content__subtitle {
   font-weight: 400;
-  margin: 18px 0 11px;
-}
+}  
 
 .gallery {
   margin-bottom: 59px;
@@ -332,11 +336,11 @@
   }
 
   .content__text {
-    margin-top: 10px;
+    margin-top: 9px;
   }
 
   .concentrate {
-    margin-bottom: 80px;
+    margin-bottom: 84px;
   }
 
   .content__attention {
@@ -385,7 +389,7 @@
   }
 
   .concentrate {
-    margin-bottom: 50px;
+    margin-bottom: 52px;
   }
 
   .content__concentrate {
@@ -426,7 +430,7 @@
     padding: 0 10px;
   }
 
-  .header__title  {
+  .header__title {
     margin-left: 20px;
   }
 
