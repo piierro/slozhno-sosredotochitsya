@@ -1,18 +1,10 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
-:root.theme-light {
+.page.theme_light {
   --accent-color__light: #FF8DCB;
   --bg-color__light: #FFF1F7;
   --text-color-light: #353430;
   --color-light: #FFC2E6;
   --text-color__light: #353430;
-}
-
-.page.theme_light {
+  --color-border-light: rgba(50, 49, 45, 0.40);
   background-color: var(--bg-color__light, #FFF1F7);
   color: var(--text-color__light, #353430);
   background-image: url(../images/cover-image-light.png);
@@ -23,11 +15,11 @@
 }
 
 .theme_light .header__theme-menu-button_active {
-  outline: 1px solid #353430;
+  outline: 1px solid  var(--text-color__light, #353430);
 }
 
 .theme_light .header__theme-menu-button:hover {
-  border: 1px solid rgba(50, 49, 45, 0.40);
+  border: 1px solid var(--color-border-light, rgba(50, 49, 45, 0.40));
 }
 
 .theme_light .header__title {
@@ -48,23 +40,25 @@
 }
 
 .theme_light .title-dec:hover {
-  border-bottom: 1px solid #353430;
+  border-bottom: 1px solid  var(--text-color__light, #353430);
 }
 
 .theme_light .title-dec:focus-visible {
-  outline: 1px solid #353430;
+  outline: 1px solid  var(--text-color__light, #353430);
 }
 
 .theme_light .footer__title {
-  color: var(--color-dark, #DB00FF);
+  color: var(--color-light, #FFC2E6);
 }
 
 .theme_light .border__decor::before {
-  border: none;
+  border-top: 1px solid var(--text-color__light, #353430);
+  border-right: 1px solid var(--text-color__light, #353430);
 }
 
 .theme_light .border__decor-second::before {
-  border: none;
+  border-left: 1px solid var(--text-color__light, #353430);
+  border-bottom: 1px solid var(--text-color__light, #353430);
 }
 
 .theme_light .decor__point::before {
@@ -76,19 +70,118 @@
 }
 
 .theme_light .border__dec::before {
-  display: none;
+  border-top: 1px solid var(--text-color__light, #353430);
+  border-right: 1px solid var(--text-color__light, #353430);
 }
 
 .theme_light .border__dec-second::before {
-  display: none;
+  border-left: 1px solid var(--text-color__light, #353430);
+  border-bottom: 1px solid var(--text-color__light, #353430);
 }
 
-@media (color-scheme: light) {
-  :root {
+@media screen and (min-width: 375px) and (max-width: 767px)   {
+  .theme_light .header__title {
+    color: var(--color-light, #FFC2E6);
+    text-shadow: 4px 4px 0 var(--accent-color__light, #FF8DCB)
+  }
+
+  .theme_light .footer__title {
+    color: var(--color-light, #FFC2E6);
+    text-shadow: 2px 2px 0 var(--accent-color__light, #FF8DCB)
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .page.theme_auto {
     --accent-color__light: #FF8DCB;
     --bg-color__light: #FFF1F7;
     --text-color-light: #353430;
     --color-light: #FFC2E6;
     --text-color__light: #353430;
+    --color-border-light: rgba(50, 49, 45, 0.40);
+    background-color: var(--bg-color__light, #FFF1F7);
+    color: var(--text-color__light, #353430);
+    background-image: url(../images/cover-image-light.png);
+  }
+  
+  .theme_auto .header__theme-menu-button {
+    color: var(--text-color__light, #353430);
+  }
+  
+  .theme_auto .header__theme-menu-button_active {
+    outline: 1px solid  var(--text-color__light, #353430);
+  }
+  
+  .theme_auto .header__theme-menu-button:hover {
+    border: 1px solid var(--color-border-light, rgba(50, 49, 45, 0.40));
+  }
+  
+  .theme_auto .header__title {
+    color: var(--color-light, #FFC2E6);
+  }
+  
+  .theme_auto .title-decor {
+    background-color: var(--accent-color__light, #FF8DCB);
+    color: var(--text-color__light, #353430);
+  }
+  
+  .theme_auto .content__title {
+    color: var(--text-color__light, #353430);
+  }
+  
+  .theme_auto .title-dec {
+    text-shadow: 1px 2px 0 var(--accent-color__light, #FF8DCB);
+  }
+  
+  .theme_auto .title-dec:hover {
+    border-bottom: 1px solid  var(--text-color__light, #353430);
+  }
+  
+  .theme_auto .title-dec:focus-visible {
+    outline: 1px solid  var(--text-color__light, #353430);
+  }
+  
+  .theme_auto .footer__title {
+    color: var(--color-light, #FFC2E6);
+  }
+
+  .theme_auto .border__decor::before {
+    border-top: 1px solid var(--text-color__light, #353430);
+    border-right: 1px solid var(--text-color__light, #353430);
+  }
+  
+  .theme_auto .border__decor-second::before {
+    border-left: 1px solid var(--text-color__light, #353430);
+    border-bottom: 1px solid var(--text-color__light, #353430);
+  }
+  
+  .theme_auto .decor__point::before {
+    display: none;
+  }
+  
+  .theme_auto .decor__text::before {
+    display: none;
+  }
+  
+  .theme_auto .border__dec::before {
+    border-top: 1px solid var(--text-color__light, #353430);
+    border-right: 1px solid var(--text-color__light, #353430);
+  }
+  
+  .theme_auto .border__dec-second::before {
+    border-left: 1px solid var(--text-color__light, #353430);
+    border-bottom: 1px solid var(--text-color__light, #353430);
+  }
+
+  @media screen and (min-width: 375px) and (max-width: 767px)  {
+    .theme_auto .header__title {
+      color: var(--color-light, #FFC2E6);
+      text-shadow: 4px 4px 0 var(--accent-color__light, #FF8DCB)
+    }
+  
+    .theme_auto .footer__title {
+      color: var(--color-light, #FFC2E6);
+      text-shadow: 2px 2px 0 var(--accent-color__light, #FF8DCB)
+    }
   }
 }

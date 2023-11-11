@@ -4,14 +4,11 @@
 */
 
 :root {
-  --main-font-family: 'IBM Plex mono', sans-serif;
+  --main-font-family: 'IBM Plex mono', monospace;
+  --accent-color: #FF0070;
+  --bg-color__dark: #000028;
+  --text-color__dark: #F1B2CE;
   --color-title: #000028;
   --color-dark: #DB00FF;
-  --color-light: #FFC2E6;
-  --accent-color: #FF0070;
-  --accent-color__light: #FF8DCB;
-  --bg-color__dark: #000028;
-  --bg-color__light: #FFF1F7;
-  --text-color__dark: #F1B2CE;
-  --text-color__light: #353430;
+  --color_border: rgba(255, 0, 112, 1);
 }

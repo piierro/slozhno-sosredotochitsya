@@ -1,32 +1,115 @@
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
-:root.theme-dark {
+.page.theme_dark {
   --accent-color: #FF0070;
   --bg-color__dark: #000028;
   --text-color__dark: #F1B2CE;
   --color-title: #000028;
   --color-dark: #DB00FF;
-}
-
-.page.theme_dark {
+  --color__border: rgba(255, 0, 112, 0.40);
   background-color: var(--bg-color__dark, #000028);
   color: var(--text-color__dark, #F1B2CE);
   background-image: url(../images/cover-image-dark.png);
 }
 
+.border__decor::before {
+  content: '';
+  position: absolute;
+  border-top: 1px solid var(--accent-color, #FF0070);
+  border-right: 1px solid var(--accent-color, #FF0070);
+  top: 19px;
+  right: 0;
+  width: 23px;
+  height: 23px;
+}
+
+.border__decor-second::before {
+  content: '';
+  position: absolute;
+  border-left: 1px solid var(--accent-color, #FF0070);
+  border-bottom: 1px solid var(--accent-color, #FF0070);
+  bottom: 23px;
+  left: 20px;
+  width: 23px;
+  height: 23px;
+}
+
+.decor__point::before {
+  content: '';
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  background: #FF0070;
+  box-shadow: 0px 0px 4px 2px var(--color__border, rgba(255, 0, 112, 1));
+  border-radius: 50%;
+  top: 28px;
+  right: 9px;
+}
+
+.decor__text::before {
+  content: 'REC';
+  position: absolute;
+  color: var(--accent-color, #FF0070);
+  top: 21px;
+  right: 28px;
+}
+
+.border__dec::before {
+  content: '';
+  position: absolute;
+  border-top: 1px solid var(--accent-color, #FF0070);
+  border-right: 1px solid var(--accent-color, #FF0070);
+  top: 20px;
+  right: 20px;
+  width: 23px;
+  height: 23px;
+}
+
+.border__dec-second::before {
+  content: '';
+  position: absolute;
+  border-left: 1px solid var(--accent-color, #FF0070);
+  border-bottom: 1px solid var(--accent-color, #FF0070);
+  bottom: 20px;
+  left: 20px;
+  width: 23px;
+  height: 23px;
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .border__decor::before {
+    top: 11px;
+  }
+  
+  .border__decor-second::before {
+   bottom: 10px;
+   }
+  
+  .decor__point::before {
+    top: 19px;
+  }
+  
+  .decor__text::before {
+    top: 11px;
+  }
+  
+  .border__dec::before {
+    top: 11px;
+    right: 10px;
+  }
+  
+  .border__dec-second::before {
+    bottom: 10px;
+    left: 10px;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
-  :root {
+  .page.theme_auto {
     --accent-color: #FF0070;
     --bg-color__dark: #000028;
     --text-color__dark: #F1B2CE;
     --color-title: #000028;
     --color-dark: #DB00FF;
-  }
-  .page.theme_dark {
+    --color__border: rgba(255, 0, 112, 0.40);
     background-color: var(--bg-color__dark, #000028);
     color: var(--text-color__dark, #F1B2CE);
     background-image: url(../images/cover-image-dark.png);
