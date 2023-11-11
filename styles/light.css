@@ -79,7 +79,7 @@
   border-bottom: 1px solid var(--text-color__light, #353430);
 }
 
-@media screen and (min-width: 375px) and (max-width: 767px)   {
+@media screen and (min-width: 375px) and (max-width: 767px) {
   .theme_light .header__title {
     color: var(--color-light, #FFC2E6);
     text-shadow: 4px 4px 0 var(--accent-color__light, #FF8DCB)
@@ -173,7 +173,7 @@
     border-bottom: 1px solid var(--text-color__light, #353430);
   }
 
-  @media screen and (min-width: 375px) and (max-width: 767px)  {
+  @media screen and (min-width: 375px) and (max-width: 767px) {
     .theme_auto .header__title {
       color: var(--color-light, #FFC2E6);
       text-shadow: 4px 4px 0 var(--accent-color__light, #FF8DCB)
